@@ -1,0 +1,18 @@
+#pragma once
+
+enum THEMES {
+  REAL,
+  LOLCAT,
+  ATOM,
+  STYLE,
+  THEME_INVALID
+};
+
+enum UNICODE {
+  DEFAULT,
+  DOUBLE,
+  ROUNDED,
+  EMPTY,
+  COUNT,
+  MOLD_INVALID
+};
