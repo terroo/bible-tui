@@ -13,6 +13,7 @@ Get Bible Verses via Command Line
 ## 📦 Dependencies
 + C++ Compiler: [GCC](https://gcc.gnu.org/) or [Clang](https://clang.llvm.org/)
 + [CMake](https://cmake.org/)
++ [cURL++](https://www.curlpp.org/)
 
 ---
 
