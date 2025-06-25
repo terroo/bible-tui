@@ -31,7 +31,7 @@ sudo cmake --install build
 
 ![Examples](./assets/en-blible-tui.png) 
 
-Help: `bible-tui --hel`
+Help: `bible-tui --help`
 
 ```bash
 Usage:
