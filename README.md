@@ -15,6 +15,11 @@ Get Bible Verses via Command Line
 + [CMake](https://cmake.org/)
 + [cURL++](https://www.curlpp.org/)
 
+Example on Ubuntu:
+```sh
+sudo apt install build-essential cmake libcurlpp-dev
+```
+
 ---
 
 ## 🚧 Build and Install
