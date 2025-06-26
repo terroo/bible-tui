@@ -14,10 +14,11 @@ Get Bible Verses via Command Line
 + C++ Compiler: [GCC](https://gcc.gnu.org/) or [Clang](https://clang.llvm.org/)
 + [CMake](https://cmake.org/)
 + [cURL++](https://www.curlpp.org/)
++ [JSON++](https://github.com/nlohmann/json)
 
 Example on Ubuntu:
 ```sh
-sudo apt install build-essential cmake libcurlpp-dev
+sudo apt install build-essential cmake libcurlpp-dev nlohmann-json3-dev
 ```
 
 ---
