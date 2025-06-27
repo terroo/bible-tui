@@ -19,6 +19,7 @@ class GetVerse {
     GetVerse(const std::string& lang, const std::string& book);
     void run_verse();
     std::string format(const std::string& str);
+    std::string format_book(const std::string& str);
     std::string br, en, lang, book;
 
   public:

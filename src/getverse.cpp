@@ -24,6 +24,35 @@ std::string GetVerse::format(const std::string& str){
   return ret;
 }
 
+std::string GetVerse::format_book(const std::string& str){
+  size_t start = 0;
+  if (str.compare(0, 3, "pt+") == 0) start = 3;
+
+  std::string ret;
+  ret.reserve(str.size() - start);
+
+  for(size_t i = start; i < str.size(); ++i){
+    char c = str[i];
+    if(c == ':'){
+      ret += '+';
+    }else{
+      ret += c;
+    }
+  }
+
+  std::string ret2 = {};
+  for(size_t i = start; i < str.size(); ++i){
+    char c = ret[i];
+    if(c == '-'){
+      ret2 += ':';
+    }else{
+      ret2 += c;
+    }
+  }
+
+  return ret2;
+}
+
 void GetVerse::run_verse(){
   try {
     curlpp::Cleanup cleanup;
@@ -75,6 +104,7 @@ void GetVerse::run_verse(){
     std::string api = en + format(href);
 
     if(!book.empty()){
+      book = format_book(book);
       api = en + book;
     }
 
@@ -111,4 +141,3 @@ void GetVerse::run_verse(){
     std::cerr << "Erro lógica: " << e.what() << "\n";
   }
 }
-
